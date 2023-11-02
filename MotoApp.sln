@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoApp", "MotoApp\MotoApp.csproj", "{22E4AC86-C3CD-449E-B77D-757D315C598E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MotoApp", "MotoApp\MotoApp.csproj", "{22E4AC86-C3CD-449E-B77D-757D315C598E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoApp.Test", "MotoApp.Test\MotoApp.Test.csproj", "{37DE76B1-C31F-4F83-84D0-E6A5FA2B97CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{22E4AC86-C3CD-449E-B77D-757D315C598E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22E4AC86-C3CD-449E-B77D-757D315C598E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22E4AC86-C3CD-449E-B77D-757D315C598E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37DE76B1-C31F-4F83-84D0-E6A5FA2B97CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37DE76B1-C31F-4F83-84D0-E6A5FA2B97CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37DE76B1-C31F-4F83-84D0-E6A5FA2B97CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37DE76B1-C31F-4F83-84D0-E6A5FA2B97CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
