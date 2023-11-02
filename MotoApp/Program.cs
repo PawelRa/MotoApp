@@ -1,6 +1,6 @@
 ﻿using MotoApp;
 
-var stack = new BasicStack();
+var stack = new BasicStack<double>();
 stack.Push(4.5);
 stack.Push(43);
 stack.Push(33.6);
@@ -15,3 +15,17 @@ while (stack.Count > 0)
 }
 
 Console.WriteLine($"Sume = {sum}");
+
+Console.WriteLine("XXXXXXXXXXXX");
+var stackString = new BasicStack<string>();
+stackString.Push("pierwszy");
+stackString.Push("drugi");
+stackString.Push("trzeci");
+
+while (stackString.Count > 0)
+{
+    var item = stackString.Pop();
+    Console.WriteLine($"Item = {item}");
+}
+
+Console.WriteLine("KONIEC");

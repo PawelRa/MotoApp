@@ -6,10 +6,10 @@ namespace MotoApp.Test
     {
 
         [Test]
-        public void StackPushCountTest()
+        public void StackDoublePushCountTest()
         {
             //arrange
-            var stack = new BasicStack();
+            var stack = new BasicStack<double>();
             stack.Push(4.5);
             stack.Push(43);
             stack.Push(33.6);
@@ -22,10 +22,10 @@ namespace MotoApp.Test
         }
 
         [Test]
-        public void StackPopCountTest()
+        public void StackDoublePopCountTest()
         {
             //arrange
-            var stack = new BasicStack();
+            var stack = new BasicStack<double>();
             stack.Push(4.5);
             stack.Push(43);
             stack.Push(33.6);
@@ -40,10 +40,10 @@ namespace MotoApp.Test
         }
 
         [Test]
-        public void StackSumTest()
+        public void StackDoubleSumTest()
         {
             //arrange
-            var stack = new BasicStack();
+            var stack = new BasicStack<double>();
             stack.Push(4.5);
             stack.Push(4.5);
             stack.Push(11);
@@ -60,6 +60,23 @@ namespace MotoApp.Test
 
             //assert
             Assert.That(20, Is.EqualTo(sum));
+        }
+
+        [Test]
+        public void StackStringPushAndPopCountTest()
+        {
+            //arrange
+            var stackString = new BasicStack<string>();
+            stackString.Push("pierwszy");
+            stackString.Push("drugi");
+            stackString.Push("trzeci");
+            stackString.Pop();
+
+            //act
+            var result = stackString.Count;
+
+            //assert
+            Assert.That(2, Is.EqualTo(result));
         }
     }
 }

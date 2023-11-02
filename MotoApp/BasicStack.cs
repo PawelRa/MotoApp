@@ -1,17 +1,17 @@
 ﻿namespace MotoApp
 {
-    public class BasicStack
+    public class BasicStack<T>
     {
-        private readonly double[] _items;
+        private readonly T[] _items;
 
         private int _curentIndex = -1;
 
-        public BasicStack() => _items = new double[10];
+        public BasicStack() => _items = new T[10];
 
         public int Count => _curentIndex + 1;
 
-        public void Push(double item) => _items[++_curentIndex] = item;
+        public void Push(T item) => _items[++_curentIndex] = item;
 
-        public double Pop() => _items[_curentIndex--];
+        public T Pop() => _items[_curentIndex--];
     }
 }
