@@ -6,3 +6,8 @@ employeeRepository.Add(new Employee { FirstName = "Adam" });
 employeeRepository.Add(new Employee { FirstName = "Piotr" });
 employeeRepository.Add(new Employee { FirstName = "Zuzia" });
 employeeRepository.Save();
+
+var employeeGenericRepository = new GenericRepository<Employee, int>();
+employeeGenericRepository.Add(new Employee { FirstName = "Adam" });
+employeeGenericRepository.Add(new Employee { FirstName = "Zuzia" });
+employeeGenericRepository.Save();
