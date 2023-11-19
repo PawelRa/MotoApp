@@ -8,11 +8,16 @@ using MotoApp.Data;
 //ListRepository.Add(new Employee { FirstName = "Piotr" });
 //ListRepository.Save();
 
-var SqlRepository = new SqlRepository<Employee>(new MotoAppDbContext());
-SqlRepository.Add(new Employee { FirstName = "Adam" });
-SqlRepository.Add(new Employee { FirstName = "Zuzia" });
-SqlRepository.Add(new Employee { FirstName = "Piotr" });
-SqlRepository.Save();
+var employeeRepository = new SqlRepository<Employee>(new MotoAppDbContext());
+employeeRepository.Add(new Employee { FirstName = "Adam" });
+employeeRepository.Add(new Employee { FirstName = "Zuzia" });
+employeeRepository.Add(new Employee { FirstName = "Piotr" });
+employeeRepository.Save();
 
-var emp = SqlRepository.GetById(1);
-Console.WriteLine(emp.ToString());
+GetEmployeeById(employeeRepository);
+
+static void GetEmployeeById(IRepository<IEntity> employeeRepository)
+{
+    var employee = employeeRepository.GetById(2);
+    Console.WriteLine(employee.ToString());
+}

@@ -40,11 +40,5 @@ namespace MotoApp.Repositores
         {
             _dbContext.SaveChanges();
         }
-
-
-        T IRepository<T>.GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

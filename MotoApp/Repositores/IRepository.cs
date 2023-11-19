@@ -2,12 +2,8 @@
 
 namespace MotoApp.Repositores
 {
-    public interface IRepository<T> where T : class, IEntity
+    public interface IRepository<T> : IRepository<T>, IWriteRepository<T> where T : IEntity
     {
-        IEnumerable<T> GetAll();
-        T GetById(int id);
-        void Add(T item);
-        void Remove(T item);
-        void Save();
+
     }
 }
