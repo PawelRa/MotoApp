@@ -2,13 +2,13 @@
 using MotoApp.Entities;
 using MotoApp.Data;
 
-//var employeeGenericRepository = new GenericRepository<Employee>();
-//employeeGenericRepository.Add(new Employee { FirstName = "Adam" });
-//employeeGenericRepository.Add(new Employee { FirstName = "Zuzia" });
-//employeeGenericRepository.Add(new Employee { FirstName = "Piotr" });
-//employeeGenericRepository.Save();
+//var ListRepository = new ListRepository<Employee>();
+//ListRepository.Add(new Employee { FirstName = "Adam" });
+//ListRepository.Add(new Employee { FirstName = "Zuzia" });
+//ListRepository.Add(new Employee { FirstName = "Piotr" });
+//ListRepository.Save();
 
-var SqlRepository = new SqlRepository(new MotoAppDbContext());
+var SqlRepository = new SqlRepository<Employee>(new MotoAppDbContext());
 SqlRepository.Add(new Employee { FirstName = "Adam" });
 SqlRepository.Add(new Employee { FirstName = "Zuzia" });
 SqlRepository.Add(new Employee { FirstName = "Piotr" });
